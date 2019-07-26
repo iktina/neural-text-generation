@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package gen_gpt_2;
+
+message Query {
+    string start_text = 1;
+    float temperature = 2;
+    int32 top_k = 3;
+}
+
+message Answer {
+    string answer = 1;
+}
+
+service GENGPT2 {
+    rpc gen_gpt_2(Query) returns (Answer) {}
+}
