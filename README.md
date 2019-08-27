@@ -8,21 +8,25 @@ The service receives a textual seed in English and uses it as input to the neura
 ## How does it work?
 The user must provide the following inputs in order to start the service and get a response:
 Inputs:
- -   `endpoint`: ntg.naint.tech.
+ -   `org_id`: snet
+ -   `service_id`: text-generation
+ -   `group_name`: gefault_group
  -   `method`: gen_gpt_2
  -   `input_path`: Path to '\*.txt' file containing JSON representation of input arguments `start_text`, `temperature` (optional) and `top_k` (optional), and their respective values.
 Input arguments:
  -   `start_text`: leave this field empty or insert the beginning of the text to generate a continuation.
+ -   `run_name`: Should be selected as a key from [persons.txt](https://github.com/iktina/neural-text-generation/blob/master/persons.txt).
  -   `temperature`: prediction variability; May take values in the interval `(0.1, 1.2)`; `1.0` by default.
  -   `top_k`: limit on the number of tokens to take/on output; May take integer values in the interval `(0, 100)`; `0` by default.
+ -   `length`: length of generated sequence. May take integer values in the interval `(0,1024)`; `256` by default.
 Example of input file content:
 ```
-{"start_text": "Before boarding your rocket to Mars, remember to pack these items", "temperature": 1.2, "top_k": 20}
+{"start_text": "Before boarding your rocket to Mars, remember to pack these items", "run_name":"trump", "temperature": 1.2, "top_k": 20, "length":512}
 ```
 You can call the service from SingularityNET CLI (`snet`).
 Assuming that you have an open channel (`id: 0`) to this service:
 ```
-$ snet client call 0 0.1 ntg.naint.tech gen_gpt_2 samples/sample.txt
+$ snet client call snet text-generation default_group gen_gpt_2 samples/sample.txt
 Read call params from the file: samples/sample.txt
 "Before boarding your rocket to Mars, remember to pack these items : A small camera and the ability to take pictures. 
 And if you can do it alone, bring the best outfit for the job: black leather boots, heavy gloves, a helmet, an oxygen pack, water bottle… 
