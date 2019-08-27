@@ -4,7 +4,9 @@ The service receives a textual seed and uses it as input to the pre-trained gene
 ## What’s the point?
 The service outputs generated text that is a continuation of a given seed.
 ## Model details:
-The service receives a textual seed in English and uses it as input to the neural GPT-2 model trained to solve diverse text generation task using large-scale Reddit-dump based dataset and outputs the generated text for a given seed. The model runs on a P100 GPU. The basic commonsense model generates diverse text adapting to the style and content of the given text seed. The number of models will be expanded to allow the generation of texts related to specific subject areas and simulate the discourse of public persons.
+The service receives a textual seed in English and uses it as input to the neural GPT-2 model trained to solve diverse text generation task using large-scale Reddit-dump based dataset and outputs the generated text for a given seed. The model runs on a P100 GPU. The basic commonsense model generates diverse text adapting to the style and content of the given text seed. The number of models will be expanded to allow the generation of texts related to specific subject areas and simulate the discourse of public persons. 
+The following models are currently available:
+"Phil Plait", "Barack Obama", "Bethany Brookshire", "Bernie Sanders", "Bill Gates", "Chris Hadfield", "Conan O'Brien", "Deborah Blum", "Deepak Chopra", "wint", "Elon Musk", "Eric Weinstein", "Hillary Clinton", "jimmyfallon", "Joe Biden", "Joe Rogan", "Dr Jordan B Peterson", "Justin Bieber", "Katy Perry", "Kevin Hart", "Kim Kardashian West", "Lady Gaga", "Brian Switek", "Neil deGrasse Tyson", "NietzscheQuotes", "John McAfee", "Donald J. Trump", "Rebecca Skloot", "Richard Dawkins", "Ricky Gervais", "Sam Harris", "Terence McKenna", "Ellen DeGeneres", "Dwayne Johnson", "God", "TicBot", "Very Short Story", "Virginia Hughes".
 ## How does it work?
 The user must provide the following inputs in order to start the service and get a response:
 Inputs:
@@ -15,7 +17,7 @@ Inputs:
  -   `input_path`: Path to '\*.txt' file containing JSON representation of input arguments `start_text`, `temperature` (optional) and `top_k` (optional), and their respective values.
 Input arguments:
  -   `start_text`: leave this field empty or insert the beginning of the text to generate a continuation.
- -   `run_name`: Should be selected as a key from [persons.txt](https://github.com/iktina/neural-text-generation/blob/master/persons.txt).
+ -   `run_name`: The name of the model to use for text generation. Should be selected as a key from [persons.txt](https://github.com/iktina/neural-text-generation/blob/master/persons.txt).
  -   `temperature`: prediction variability; May take values in the interval `(0.1, 1.2)`; `1.0` by default.
  -   `top_k`: limit on the number of tokens to take/on output; May take integer values in the interval `(0, 100)`; `0` by default.
  -   `length`: length of generated sequence. May take integer values in the interval `(0,1024)`; `256` by default.
