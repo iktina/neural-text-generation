@@ -7,7 +7,7 @@ The service outputs generated text that is a continuation of a given seed.
 The service receives a textual seed in English and uses it as input to the neural GPT-2 model trained to solve diverse text generation task using large-scale Reddit-dump based dataset and outputs the generated text for a given seed. The model runs on a P100 GPU. The basic commonsense model generates diverse text adapting to the style and content of the given text seed. The number of models will be expanded to allow the generation of texts related to specific subject areas and simulate the discourse of public persons. 
 
 The following models are currently available:
--"Phil Plait"
+- "Phil Plait"
 -"Barack Obama"
 -"Bethany Brookshire"
 -"Bernie Sanders"
