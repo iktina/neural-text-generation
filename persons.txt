@@ -22,7 +22,6 @@
 "ladygaga": "Lady Gaga", 
 "laelaps": "Brian Switek", 
 "neiltyson": "Neil deGrasse Tyson", 
-"nietzschequotes": "NietzscheQuotes",
 "officialmcafee": "John McAfee", 
 "trump": "Donald J. Trump", 
 "rebeccaskloot": "Rebecca Skloot", 
@@ -34,5 +33,4 @@
 "therock": "Dwayne Johnson", 
 "thetweetofgod": "God", 
 "ticbot": "TicBot", 
-"veryshortstory": "Very Short Story",
 "virginiahughes": "Virginia Hughes"
