@@ -56,7 +56,7 @@ Inputs:
 Input arguments:
  -   `start_text`: leave this field empty or insert the beginning of the text to generate a continuation.
  -   `run_name`: The name of the model to use for text generation. Should be selected as a key from [persons.txt](https://github.com/iktina/neural-text-generation/blob/master/persons.txt).
- -   `temperature`: prediction variability; May take values in the interval `(0.1, 1.2)`; `1.0` by default.
+ -   `temperature`: prediction variability; May take values in the interval `(0.1, 1.2)`; `0.5` by default.
  -   `top_k`: limit on the number of tokens to take/on output; May take integer values in the interval `(0, 100)`; `0` by default.
  -   `length`: length of generated sequence. May take integer values in the interval `(0,1024)`; `256` by default.
  
