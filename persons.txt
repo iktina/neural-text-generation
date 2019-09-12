@@ -30,3 +30,4 @@
 "therock": "Dwayne Johnson", 
 "thetweetofgod": "God", 
 "ticbot": "TicBot", 
+"universal":"Universal Generator"
