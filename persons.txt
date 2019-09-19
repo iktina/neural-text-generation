@@ -34,4 +34,8 @@
 "goodfellow_ian": "Ian Goodfellow",
 "nietzsche": "Friedrich Nietzsche",
 "quotes500k_texts": Best Quotes,
-"songdata": Song Lyrics
+"songdata": Song Lyrics,
+"cmdr_hadfield": "Chris Hadfield",
+"dril": "Dril",
+"officialmcafee": "John MacAfee",
+"virginiahughes": "Virginia Huges"
