@@ -1,3 +1,4 @@
+"universal":"Universal Generator",
 "badastronomer": "Phil Plait", 
 "barackobama": "Barack Obama", 
 "beebrookshire": "Bethany Brookshire", 
@@ -30,4 +31,7 @@
 "therock": "Dwayne Johnson", 
 "thetweetofgod": "God", 
 "ticbot": "TicBot", 
-"universal":"Universal Generator"
+"goodfellow_ian": "Ian Goodfellow",
+"nietzsche": "Friedrich Nietzsche",
+"quotes500k_texts": Best Quotes,
+"songdata": Song Lyrics
